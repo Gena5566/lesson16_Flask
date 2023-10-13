@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request
 import requests
 from bs4 import BeautifulSoup
+import sqlite3
+
 
 app = Flask(__name__)
 
@@ -23,7 +25,16 @@ def get_news(keyword):
             if keyword in article_title:
                 news_list.append({'title': article_title, 'link': article_link, 'time': publication_time})
 
+                # Сохранение данных в SQLite базу данных
+                conn = sqlite3.connect('hh.sqlite')
+                c = conn.cursor()
+                c.execute("INSERT INTO data_news (data_date, title, link) VALUES (?, ?, ?)",
+                          (publication_time, article_title, article_link))
+                conn.commit()
+                conn.close()
+
     return news_list
+
 
 @app.route('/')
 def index():
