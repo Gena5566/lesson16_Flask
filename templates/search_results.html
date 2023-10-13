@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты поиска</title>
+</head>
+<body>
+    <h1>Результаты поиска</h1>
+
+    <a href="/">Главная страница</a> | <a href="/all_news">Все новости</a>
+
+    <p>Результаты поиска для ключевого слова: <strong>{{ keyword }}</strong></p>
+
+    <ul>
+        {% for news_item in news_list %}
+            <li>
+                Время публикации: {{ news_item.time }}<br>
+                <a href="{{ news_item.link }}" target="_blank">{{ news_item.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+

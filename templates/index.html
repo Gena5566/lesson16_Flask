@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+    <h1>Поиск последних новостей</h1>
+
+    <a href="/">Главная страница Поиск новостей</a> | <a href="/all_news">Все новости</a>
+
+    <form method="post" action="/search_results">
+        <label for="keyword">Введите слово для поиска:</label>
+        <input type="text" name="keyword" id="keyword" required>
+        <input type="submit" value="Искать">
+    </form>
+</body>
+</html>

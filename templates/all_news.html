@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Все новости</title>
+</head>
+<body>
+    <h1>Все новости</h1>
+
+    <a href="/">Главная страница</a> | <a href="/all_news">Все новости</a>
+
+    <ul>
+        {% for news_item in news_list %}
+            <li>
+                Время публикации: {{ news_item.time }}<br>
+                <a href="{{ news_item.link }}" target="_blank">{{ news_item.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
