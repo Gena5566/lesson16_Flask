@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Table</title>
+</head>
+<body>
+    <h1>News Table</h1>
+    <a href="/">Главная страница</a>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Title</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in news %}
+                <tr>
+                    <td>{{ item.data_date }}</td>
+                    <td>{{ item.title }}</td>
+                    <td><a href="{{ item.link }}" target="_blank">Read more</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
