@@ -4,3 +4,8 @@
 на соответствующую веб-страницу.
 Кроме того, результаты поиска сохраняются в базе данных. Пользователь может просматривать данные из базы данных в виде таблицы,
 перейдя по ссылке на главной странице.
+<img width="1280" alt="Снимок экрана 2023-12-19 в 16 42 08" src="https://github.com/Gena5566/lesson16_Flask/assets/129315203/82d5ca8c-0a9d-4b83-9da2-d04931537dac">
+<img width="1280" alt="Снимок экрана 2023-12-19 в 16 42 29" src="https://github.com/Gena5566/lesson16_Flask/assets/129315203/eb6df178-c7f0-4e7e-ae0f-0a648012cb52">
+<img width="1280" alt="Снимок экрана 2023-12-19 в 16 44 08" src="https://github.com/Gena5566/lesson16_Flask/assets/129315203/eff6dcd3-08c0-4908-9c38-646c299e54a4">
+<img width="1280" alt="Снимок экрана 2023-12-19 в 16 43 16" src="https://github.com/Gena5566/lesson16_Flask/assets/129315203/2d8b9ad4-aa5d-4bcf-86b7-f9e0cffa7195">
+<img width="1280" alt="Снимок экрана 2023-12-19 в 16 43 05" src="https://github.com/Gena5566/lesson16_Flask/assets/129315203/24645c30-9b84-45d0-9b4e-b3debbb615be">
